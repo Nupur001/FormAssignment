@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <main>
+        <div id="container">
+            <div id="heading">
+                <h2>Get started today!</h2>
+            </div>
+            <form id="inner_container" name="myform" action="index.html" onsubmit="return validateForm()" method="get">
+                <div id="form_group">
+                    <div class="form_input first_name_input">
+                        <label for="firstname">First name</label> <br />
+                        <input type="text" name="first-name" id="firstname" title="Name should have no digits" required>
+                    </div>
+                    <div class="form_input last_name_input">
+                        <label for="lastname">Last name</label> <br />
+                        <input type="text" name="last-name" id="lastname" title="Name should have no digits" required>
+                    </div>
+                    <span id="space_around"></span>
+                    <div class="form_input email_input">
+                        <label for="emailid">Email address</label> <br />
+                        <input type="text" name="email" id="emailid" title="Enter a valid email" required>
+                    </div>
+                    <div class="form_input password_input">
+                        <label for="password">Password</label> <br />
+                        <input type="password" name="password" id="password"
+  title="Only digits (at least 8)" required>
+                    </div>
+                </div>
+                <div id="messages"></div>
+                <hr />
+
+                <div id="claim_button">
+                    <button type="submit" id="btn">Claim Your Free Trial</button>
+                </div>
+
+                <br />
+                <div id="bottom_text">
+                    <p id="text">You are agreeing to our <a href="#">Terms and Conditions</a></p>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- External JS File -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

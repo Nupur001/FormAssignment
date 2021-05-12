@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Helvetica;
+    background-color: #dff9fb;
+}
+main {
+    position: relative;
+}
+
+#container {
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    border: 1px solid #000;
+    width: 40vw;
+    box-shadow: 10px 10px 8px #95afc0;
+}
+
+#heading {
+    background-color: #637a91;
+    color: white;
+    margin:0px;
+    padding: 10px;
+    text-align:center;
+}
+
+#inner_container {
+    margin: 0 25px;
+}
+
+#form_group {
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.form_input {
+    flex-basis: 50%;
+}
+.password_input, .last_name_input{
+    padding-left: 10px;
+}
+
+input {
+    padding: 7px 12px;
+    margin-top: 4px;
+    width: 100%;
+    outline: none;
+    background-color: #F9FAFA;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #E2E5E8;
+}
+
+#space_around {
+    margin: 12px 0;
+    width: 100%;
+}
+
+#claim_button {
+    width: 100%;
+    margin: 20px 0 0;
+}
+
+#btn {
+    width: 100%;
+    padding: 14px 12px;
+    color: #FFF;
+
+    background-color: #5fcf80;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#bottom_text {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 1024px ){
+    #container {
+        width: 60vw;
+    }
+}
+
+@media (max-width: 824px) {
+    #container {
+        width: 90vw;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin: 20px auto;
+    }
+}
+
+
+@media (max-width: 710px) {
+    .form_input {
+        flex-basis: 100%;
+    }
+    .password_input, .last_name_input {
+        padding-left: 0px;
+    }
+    input {
+        margin-bottom: 20px;
+    }
+
+    #space_around {
+        margin: 0;
+    }
+}
